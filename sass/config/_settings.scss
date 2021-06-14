@@ -1,0 +1,35 @@
+// variables de css especificas
+
+$dark-blue: #172732;
+$dark-green: #223D47;
+$hard-black-transparent: rgba(0, 0, 0, 0.931);
+$gif-image: url(".././img/colors.gif");
+$green: #425957;
+$red: red;
+$roboto: 'Roboto', 'Arial', cursive;
+$rubik: 'Rubik Mono One', 'Arial', sans-serif;
+$smooth-black-transparent: rgba(0, 0, 0, 0.616);
+$white: white;
+$white-transparent: rgba(255, 255, 255, 0.582);
+
+// variables de css globales
+
+$boder-white: $white;
+$button-background: $green;
+$button-background-image: $gif-image;
+$error-background: $red;
+$first-background: $dark-blue;
+$fourth-background:$dark-blue;
+$hero-backgrounds: $smooth-black-transparent;
+$hero-white-transparent-button: $white-transparent;
+$modal-background: $hard-black-transparent;
+$menu-background: $smooth-black-transparent;
+$principal-font: $rubik;
+$principal-font-color: $white;
+$second-background: $dark-green;
+$secondary-font: $roboto;
+$scroll-background-color: $hard-black-transparent;
+$scroll-bar-color:$white;
+$svg-hover: $green;
+$third-background: $green;
+$validate-background: $green;

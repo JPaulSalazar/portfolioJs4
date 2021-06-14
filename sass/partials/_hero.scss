@@ -1,0 +1,65 @@
+// zona del zaludo en el hero
+.hero {
+  background-color: $hero-backgrounds;
+  box-sizing: border-box;
+  height: 975px;
+  letter-spacing: 10px;
+  padding-top: 200px;
+  position: relative;
+  text-align: center;
+
+  h1{
+    font-family: $principal-font;
+    font-size: 100px;
+  }
+}
+.hero__button{
+  background-color: $hero-backgrounds;
+  border: solid 2px $hero-white-transparent-button;
+  border-radius: 9px;
+  color: $hero-white-transparent-button;
+  font-family: $secondary-font;
+  font-size: 12px;
+  padding: 10px;
+  position: absolute;
+  right: 25px;
+  top:35px;
+  width: 90px;
+
+  img{
+    float: left;
+    opacity: 0.5;
+    padding-left: 18px;
+    padding-top: 15px;
+  }
+}
+.hero__button--text{
+  float: left;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+// señal de scroll
+.hero__scroll{
+  font-family: $secondary-font;
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding-top: 20px;
+}
+.hero__scroll--arrow{
+	animation: jump 3s infinite;
+}
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(15px);
+  }
+}
+.hero__title{
+  width: 1037px;
+  margin: 0 auto;
+}
