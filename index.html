@@ -2,259 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Jeampaul Salazar Castillo" />
+    <meta name="description" content="Portfolio web" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="portfolio"/>
-    <meta name="Keywords" content="portfolio"/>
-    <meta name="author" content="Jeampaul Salazar"/>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <!-- video y backgroun de la pagina-->
-    <div class="home__background">
-      <video loop muted play class="home__background--video">
-        <source src="video/colors.mp4" type="video/mp4">
-      </video>
+    <svg class="background-shape background-shape-1" aria-hidden="true" focusable="false" width="220" height="191" viewBox="0 0 220 191" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M52.5 191C145.008 191 220 116.008 220 23.5C220 15.7522 219.474 8.12735 218.456 0.659088L0.473389 0.659088V182.752C0.477727 182.757 0.482069 182.762 0.486413 182.767C16.8597 188.111 34.3425 191 52.5 191Z"
+      fill="#9FE0F9"/>
+    </svg>
+
+    <div class="header" >
+
+      <a class="header__logo-link" href="index.html" aria-labelledby="home-label">
+        <span id="home-label" hidden>Home</span>
+        <img class="header__logo" aria-hidden="true" focusable="false" src="https://i.ibb.co/wCVPRb8/logo.png">
+      </a>
+
+      <div class="header__menu" >
+          <button class="header__button" id="menu-button-js" aria-labelledby="button-label">
+            <span id="button-label" hidden>Menu</span>
+            <p class="header__button-text" id='round-text-js' aria-hidden="true" focusable="false" >MENU-MENU-MENU-</p>
+          </button>
+
+
+        <div class="header__menu-box" id="menu-content-js">
+
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#main">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#projects">Recent work</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#about">Who I am</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <!--barra del muenu-->
-    <div class="menu__container">
-      <ul>
-        <li><a href="#hero"><img src="img/icon.png" alt="logo"></a></li>
-        <li><a href="#main-proyects" class="menu__container--anchor">Projects</a></li>
-        <li><a href="#main-exercises" class="menu__container--anchor">Exercises</a></li>
-        <li><a href="#main-comments" class="menu__container--anchor">Comments</a></li>
-        <li><a href="#main-about" class="menu__container--anchor">About me</a></li>
-      </ul>
-    </div>
-
-    <!-- bienvenidad -->
     <div class="wrapper">
 
-      <div class="hero div-main" id="hero">
+      <div class="main" id="main">
+        <div class="main__text">
 
-        <a class="hero__button clearfix" href="">
+          <h1 class="main__title">Hi, my name is Paul. <br>I’m developer and web designer junior.</h1>
+          <p class="main__p">Driven by the passion to <b>innovate</b>, <b>I bring ideas to life</b>, empowered them with <b>creativity</b> and <b>judgment</b>. <br><b>Work with me to code a better future together</b>.</p>
 
-          <img src="./img/play.svg" alt="play or stop video">
-          <h4 class="hero__button--text">Play video</h4>
+        </div>
 
+        <div class="main__images">
+
+          <img class="main__img main__img--front-1" aria-hidden="true" focusable="false" src="https://i.ibb.co/qs6DtgD/search.png" >
+          <img class="main__img main__img--front-2" aria-hidden="true" focusable="false" src="https://i.ibb.co/yqVWgZz/cursor.png" >
+          <img class="main__img main__img--center" aria-hidden="true" focusable="false" src="https://i.ibb.co/Q9ZTSmg/programer.png">
+          <img class="main__img main__img--back" aria-hidden="true" focusable="false" src="https://i.ibb.co/D1BTXkm/code.png" >
+
+        </div>
+
+        <a class="main__button button--gradient button" href="mailto:jpaulsalazar28@gmail.com">Let's keep in touch <span class="button__separate-text" aria-hidden="true" focusable="false" >></span></a>
+
+      </div>
+        <button class="main__scroll-button" aria-labelledby="button-scroll-label">
+          <svg aria-hidden="true" focusable="false" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30Z" fill="#534D64"/>
+            <path d="M22 31L29 38L36 31" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M29 38L29 22" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span id="button-scroll-label" >Scroll down</span>
+        </button>
+    </div>
+
+    <svg class="background-shape background-shape-2" aria-hidden="true" focusable="false" width="274" height="436" viewBox="0 0 274 436" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M274 7.25976V428.74C256.13 433.476 237.36 436 218 436C97.6019 436 0 338.398 0 218C0 97.6019 97.6019 0 218 0C237.36 0 256.13 2.52359 274 7.25976Z" fill="#9FE0F9"/>
+    </svg>
+
+    <div class="wrapper recent" id="projects">
+      <h2 class="recent__tittle">Recent work</h2>
+    </div>
+
+    <div class="elastic-wrapper">
+      <div class="recent__container">
+        <a target="_blank" class="recent__project recent__project-1" href="https://xn--cronologasdeloinvisible-8ec.com/">
+          <img class="recent__background" src="https://i.ibb.co/W6kYtYZ/cornologias-background.png" alt="project cronologias de lo invisible background">
+          <img class="recent__content recent__content-1" src="https://i.ibb.co/xDLs2gt/cronologias.png" alt="project cronologias de lo invisible content">
         </a>
 
-        <div class="hero__title">
-          <h1>Hello visitor!!! Welcome to Paul’s portfolio.</h1>
-        </div>
+        <a target="_blank" class="recent__project" href="https://mariaconejo.github.io/e-commers-.github.io/index.html">
+          <img class="recent__background" src="https://i.ibb.co/JWLXkNX/oulan-background.png" alt="project oulan e-commerce background">
+          <img class="recent__content recent__content-2" src="https://i.ibb.co/RB3Mjyh/oulan.png" alt="project oulan e-commerce content">
+        </a>
 
-        <!--flecha que ayuda a señalar que hay que hacer scroll-->
-        <div class="hero__scroll">
+        <a target="_blank" class="recent__project" href="https://drive.google.com/file/d/14Y69-9HfBFmvEXXfYg4YBz7GMH3MyoU3/view?usp=sharing">
+          <img class="recent__background" src="https://i.ibb.co/3hGHtTx/write-background.png" alt="project ux study case background">
+          <img class="recent__content recent__content-3" src="https://i.ibb.co/cw0PkVN/write.png" alt="project ux study case content">
+        </a>
 
-          <h4>Scroll Down</h4>
-
-          <div class="hero__scroll--arrow">
-
-            <svg width="45" height="22" viewBox="0 0 45 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.4647 21.9926C21.715 21.994 20.9884 21.7384 20.4112 21.2701L1.15914 5.56392C0.503876 5.03073 0.091804 4.26455 0.0135775 3.43392C-0.064649 2.6033 0.197377 1.77627 0.742012 1.13478C1.28665 0.493284 2.06928 0.0898746 2.91774 0.0132922C3.76619 -0.0632902 4.61097 0.193227 5.26624 0.726416L22.4647 14.7991L39.6632 1.22902C39.9914 0.968086 40.369 0.77323 40.7744 0.655648C41.1798 0.538066 41.6049 0.500077 42.0253 0.543863C42.4458 0.587649 42.8532 0.712346 43.2243 0.91079C43.5953 1.10923 43.9226 1.37751 44.1874 1.7002C44.4813 2.02319 44.7038 2.4021 44.8411 2.81321C44.9784 3.22431 45.0275 3.65875 44.9853 4.08929C44.9432 4.51984 44.8106 4.93722 44.596 5.31529C44.3814 5.69336 44.0894 6.02397 43.7382 6.2864L24.4862 21.4586C23.8923 21.8528 23.1806 22.0409 22.4647 21.9926Z" fill="white"/>
-            </svg>
-
-          </div>
-
-
-        </div>
-
+        <a target="_blank" class="recent__project recent__project-4" href="https://stephanie-vm.github.io/Proyecto-final-IV-cuatri/">
+          <img class="recent__background" src="https://i.ibb.co/bmJYG4c/music-background.png" alt="project music player background">
+          <img class="recent__content recent__content-4" src="https://i.ibb.co/6cQZNJ1/music.png" alt="project music player content">
+        </a>
       </div>
+      <img class="recent__img" aria-hidden="true" focusable="false" src="https://i.ibb.co/fxtTdhh/men-back.png">
+    </div>
 
-      <!--zona de proyectos destacados-->
-      <div class="main__proyects div-main" id="main-proyects">
+    <div class="wrapper">
 
-        <div class="subwrapper">
+      <div class="about-me" id="about">
 
-          <h2>Proyects</h2>
+        <h2 class="about-me__tittle">Who I am</h2>
 
-          <div class="proyects-list">
+        <p class="about-me__text" >I am a junior web developer who <b>loves new challenges</b> with academic experience in <b>design</b>, <b>layout</b> and <b>development</b> of websites, in this process I acquired <b>research</b>, <b>communication</b> and <b>group work skills based on agile methodologies</b> such as <b>design sprint</b>, in addition, I have <b>critical and creative thinking</b> when providing ideas.</p>
 
-            <ul class="proyects-list-ul">
-              <li>
-                <a href="https://jeareth-venegas.github.io/ProyectoHotel.github.io/" target = "_blank">
-                  <img src="img/proyecto-1.jpg" alt="hotel proyect">
-                  <h3>Hotel</h3>
-                </a>
-              </li>
-              <li>
-                <a href="https://jpaulsalazar.github.io/formularioAppi/" target = "_blank">
-                  <img src="img/proyecto-2.jpg" alt="form proyect">
-                  <h3>Form</h3>
-                </a>
-              </li>
-              <li>
-                <a href="https://jpaulsalazar.github.io/Api-de-peliculas/" target = "_blank">
-                  <img src="img/proyecto-3.jpg" alt="movies proyect">
-                  <h3>Movies</h3>
-                </a>
-              </li>
-              <li>
-                <a href="https://jpaulsalazar.github.io/Accordeon/" target = "_blank">
-                  <img src="img/proyecto-4.jpg" alt="accordion proyect">
-                  <h3>Accordion</h3>
-                </a>
-              </li>
-            </ul>
+        <a class="about-me__button-1 button--gradient button" href="mailto:jpaulsalazar28@gmail.com">Let's keep in touch <span class="button__separate-text" aria-hidden="true" focusable="false" >></span></a>
+        <a class="about-me__button-2 button" href="/assets/jeampaul_salazar_castillo_curriculum.pdf" download="jeampaul_salazar_castillo_curriculum">Download cv</a>
 
-          </div>
+        <svg class="background-shape background-shape-3" aria-hidden="true" focusable="false"  width="300" height="300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="163" cy="163" r="163" fill="#9FE0F9"/>
+        </svg>
 
-        </div>
-
-      </div>
-
-      <!-- zona de ejercicios de git hub-->
-      <div class="main__exercises div-main" id="main-exercises">
-
-        <div class="subwrapper">
-
-          <h2>Git hub activity</h2>
-
-          <div class="exercises__container">
-
-            <ul class="exercises__container--list"></ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!--zona de comentarios-->
-      <div class="main__comments div-main" id="main-comments">
-
-        <div class="subwrapper">
-
-          <h2>Comments</h2>
-
-          <div class="comments__container">
-
-            <ul>
-
-              <li>
-                <img src="img/person.jpg" alt="People who comments">
-
-                <div>
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur.</p>
-                </div>
-
-              </li>
-
-              <li>
-                <img src="img/person.jpg" alt="People who comments">
-
-                <div>
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur.</p>
-                </div>
-
-              </li>
-
-              <li>
-                <img src="img/person.jpg" alt="People who comments">
-
-                <div>
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur.</p>
-                </div>
-
-              </li>
-
-              <li>
-                <img src="img/person.jpg" alt="People who comments">
-
-                <div>
-                  <h3>Lorem ipsum</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur dolor sit amet consectetur adipisicing elit sit amet consectetur.</p>
-                </div>
-
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- zona de informacion personal-->
-      <div class="main__about div-main" id="main-about">
-
-        <div class="subwrapper">
-
-          <h2>About me</h2>
-
-          <div>
-
-            <div class="about__container clearfix">
-
-              <div class="about__container--float--text">
-                <h3>Who is this guy?</h3>
-                <p>Lorem Ipsum is simply dummy  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                <div class="about__container--logos" >
-                  <a href="https://www.instagram.com/jeamp1997/" class="about__container--logos--instagram"><svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="instagram" fill-rule="evenodd" clip-rule="evenodd" d="M20.5 0C14.9322 0 14.2352 0.0245999 12.0478 0.123C9.86665 0.22345 8.3763 0.5699 7.0725 1.07625C5.7041 1.59048 4.46439 2.39713 3.4399 3.4399C2.39718 4.46444 1.59054 5.70413 1.07625 7.0725C0.5699 8.3763 0.22345 9.86665 0.123 12.0478C0.0225499 14.2352 0 14.9322 0 20.5C0 26.0678 0.0225499 26.7648 0.123 28.9521C0.22345 31.1333 0.5699 32.6237 1.07625 33.9275C1.5906 35.2958 2.39723 36.5355 3.4399 37.5601C4.46448 38.6028 5.70416 39.4094 7.0725 39.9237C8.3763 40.4301 9.86665 40.7766 12.0478 40.877C14.2352 40.9754 14.9322 41 20.5 41C26.0678 41 26.7648 40.9754 28.9521 40.877C31.1333 40.7766 32.6237 40.4301 33.9275 39.9237C35.2959 39.4095 36.5356 38.6028 37.5601 37.5601C38.6028 36.5356 39.4095 35.2959 39.9237 33.9275C40.4301 32.6237 40.7766 31.1333 40.877 28.9521C40.9754 26.7648 41 26.0678 41 20.5C41 14.9322 40.9754 14.2352 40.877 12.0478C40.7766 9.86665 40.4301 8.3763 39.9237 7.0725C39.4095 5.70413 38.6028 4.46444 37.5601 3.4399C36.5356 2.39713 35.2959 1.59048 33.9275 1.07625C32.6237 0.5699 31.1333 0.22345 28.9521 0.123C26.7648 0.0245999 26.0678 0 20.5 0ZM20.5 3.6941C25.9735 3.6941 26.6213 3.7146 28.782 3.813C30.7828 3.90525 31.8673 4.23735 32.5909 4.5182C33.5462 4.8913 34.2309 5.33615 34.9484 6.0516C35.6659 6.7691 36.1087 7.4538 36.4818 8.4091C36.7606 9.13275 37.0968 10.2172 37.187 12.216C37.2854 14.3787 37.3059 15.0244 37.3059 20.5C37.3059 25.9735 37.2854 26.6213 37.187 28.782C37.0947 30.7828 36.7606 31.8673 36.4818 32.5909C36.1531 33.4814 35.6292 34.2869 34.9484 34.9484C34.2309 35.6659 33.5462 36.1087 32.5909 36.4818C31.8673 36.7606 30.7828 37.0968 28.784 37.187C26.6234 37.2854 25.9755 37.3059 20.5 37.3059C15.0265 37.3059 14.3766 37.2854 12.218 37.187C10.2172 37.0947 9.13275 36.7606 8.4091 36.4818C7.51855 36.1533 6.71297 35.6293 6.0516 34.9484C5.37071 34.287 4.84673 33.4815 4.5182 32.5909C4.23735 31.8673 3.9032 30.7828 3.813 28.784C3.7146 26.6213 3.6941 25.9755 3.6941 20.5C3.6941 15.0265 3.7146 14.3787 3.813 12.218C3.90525 10.2172 4.23735 9.13275 4.5182 8.4091C4.8913 7.4538 5.33615 6.7691 6.0516 6.0516C6.7691 5.3341 7.4538 4.8913 8.4091 4.5182C9.13275 4.23735 10.2172 3.9032 12.216 3.813C14.3787 3.7146 15.0244 3.6941 20.5 3.6941ZM20.5 27.3326C18.6879 27.3326 16.95 26.6128 15.6686 25.3314C14.3872 24.05 13.6673 22.3121 13.6673 20.5C13.6673 18.6879 14.3872 16.95 15.6686 15.6686C16.95 14.3872 18.6879 13.6673 20.5 13.6673C22.3121 13.6673 24.05 14.3872 25.3314 15.6686C26.6128 16.95 27.3326 18.6879 27.3326 20.5C27.3326 22.3121 26.6128 24.05 25.3314 25.3314C24.05 26.6128 22.3121 27.3326 20.5 27.3326ZM20.5 9.97325C19.1176 9.97325 17.7488 10.2455 16.4716 10.7746C15.1944 11.3036 14.034 12.079 13.0565 13.0565C12.079 14.034 11.3036 15.1944 10.7746 16.4716C10.2455 17.7488 9.97325 19.1176 9.97325 20.5C9.97325 21.8824 10.2455 23.2512 10.7746 24.5284C11.3036 25.8056 12.079 26.966 13.0565 27.9435C14.034 28.921 15.1944 29.6964 16.4716 30.2254C17.7488 30.7545 19.1176 31.0268 20.5 31.0268C23.2919 31.0268 25.9694 29.9177 27.9435 27.9435C29.9177 25.9694 31.0268 23.2919 31.0268 20.5C31.0268 17.7081 29.9177 15.0306 27.9435 13.0565C25.9694 11.0823 23.2919 9.97325 20.5 9.97325ZM33.9029 9.5571C33.9029 9.88015 33.8393 10.2 33.7156 10.4985C33.592 10.797 33.4108 11.0682 33.1824 11.2966C32.9539 11.525 32.6828 11.7062 32.3843 11.8298C32.0858 11.9535 31.7659 12.0171 31.4429 12.0171C31.1198 12.0171 30.8 11.9535 30.5015 11.8298C30.203 11.7062 29.9318 11.525 29.7034 11.2966C29.475 11.0682 29.2938 10.797 29.1702 10.4985C29.0465 10.2 28.9829 9.88015 28.9829 9.5571C28.9829 8.90467 29.2421 8.27896 29.7034 7.81762C30.1648 7.35628 30.7905 7.0971 31.4429 7.0971C32.0953 7.0971 32.721 7.35628 33.1824 7.81762C33.6437 8.27896 33.9029 8.90467 33.9029 9.5571Z" fill="white"/>
-                    </svg>
-                    </a>
-                  <a href="#" class="about__container--logos--twitter about__container--logos--margin"><svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="twitter" d="M11.0122 31.9827H10.8527C7.63941 31.9545 4.47263 31.2103 1.58161 29.8041C1.04982 29.5536 0.611956 29.1391 0.33212 28.6212C0.0522849 28.1033 -0.0548261 27.5092 0.0264671 26.9259C0.11488 26.3386 0.386119 25.7943 0.80146 25.3708C1.2168 24.9472 1.75501 24.666 2.33924 24.5674C4.13087 24.3278 5.85444 23.7223 7.40343 22.7885C4.71415 20.6807 2.6438 17.8828 1.41178 14.6913C0.179761 11.4998 -0.168023 8.03356 0.405284 4.66001C0.483017 4.12566 0.712254 3.62494 1.06572 3.21745C1.41918 2.80996 1.88199 2.51284 2.39906 2.36147C2.90212 2.20309 3.4405 2.19632 3.94736 2.34201C4.45422 2.48769 4.90723 2.77942 5.25015 3.18095C6.41452 4.71155 7.87774 5.98829 9.55054 6.9333C11.2233 7.87831 13.0706 8.47176 14.9798 8.67747C15.071 6.32267 16.0804 4.0978 17.791 2.4814C18.6451 1.66147 19.6535 1.02015 20.7574 0.59481C21.8612 0.169474 23.0385 -0.0313734 24.2205 0.00397188C25.4026 0.0393172 26.5658 0.310149 27.6424 0.800684C28.719 1.29122 29.6875 1.99165 30.4913 2.86116C30.7008 3.04678 30.961 3.16507 31.2383 3.2007C31.5155 3.23634 31.7971 3.18768 32.0465 3.06103C32.5219 2.83627 33.0512 2.75166 33.5727 2.81707C34.0943 2.88249 34.5865 3.09523 34.992 3.43049C35.3974 3.76574 35.6995 4.20967 35.8628 4.71049C36.0261 5.21131 36.044 5.74837 35.9144 6.259C35.4545 8.15802 34.5832 9.93226 33.3624 11.4557C33.0933 17.1416 30.5927 22.4903 26.406 26.3355C22.2192 30.1807 16.6858 32.2106 11.0122 31.9827ZM11.0122 27.9852H11.1717C13.4898 28.0651 15.8006 27.683 17.9703 26.8609C20.14 26.0388 22.1252 24.7931 23.8111 23.196C25.4969 21.599 26.8497 19.6823 27.7911 17.5572C28.7325 15.4321 29.2437 13.1408 29.2951 10.8161C29.328 10.179 29.5901 9.57546 30.0328 9.11719C30.5191 8.50007 30.9338 7.82952 31.2689 7.11845C30.5506 7.11982 29.8402 6.96921 29.184 6.67645C28.5278 6.38369 27.9406 5.95539 27.4608 5.41953C26.9994 4.96093 26.4514 4.59921 25.8489 4.35553C25.2464 4.11186 24.6014 3.99114 23.9518 4.00043C23.2956 3.98342 22.6426 4.0965 22.0301 4.33317C21.4177 4.56984 20.8579 4.92544 20.3829 5.37956C19.7421 5.98917 19.2722 6.75682 19.0202 7.60568C18.7683 8.45454 18.7432 9.35484 18.9474 10.2165L19.4658 12.495L17.133 12.6549C14.7427 12.8503 12.3385 12.5226 10.0871 11.6943C7.83561 10.866 5.79063 9.55701 4.09377 7.85799C4.02099 10.4891 4.67755 13.0889 5.99043 15.3684C7.30332 17.6478 9.22109 19.5176 11.5305 20.7698L13.4246 21.8491L12.1685 23.648C10.8102 25.4339 8.94897 26.7706 6.82524 27.4855C8.18761 27.8279 9.58775 27.9957 10.9922 27.9852H11.0122Z" fill="white"/>
-                    </svg>
-                    </a>
-                  <a href="https://github.com/JPaulSalazar" class="about__container--logos--git"><svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="git" d="M21.5 0C15.7978 0 10.3292 2.31785 6.2972 6.44365C2.26517 10.5695 0 16.1652 0 22C0 27.8348 2.26517 33.4305 6.2972 37.5564C10.3292 41.6822 15.7978 44 21.5 44C27.2022 44 32.6708 41.6822 36.7028 37.5564C40.7348 33.4305 43 27.8348 43 22C43 16.1652 40.7348 10.5695 36.7028 6.44365C32.6708 2.31785 27.2022 0 21.5 0ZM27.1682 39.936H27.0001C26.8749 39.9429 26.7497 39.9236 26.632 39.8792C26.5144 39.8349 26.4068 39.7664 26.316 39.678C26.232 39.5874 26.1665 39.4806 26.1232 39.3639C26.0799 39.2472 26.0598 39.1228 26.0639 38.998V36.418C26.0756 35.562 26.0834 34.698 26.0834 33.824C26.0802 33.1854 25.9888 32.5504 25.8117 31.938C25.645 31.3195 25.3085 30.7629 24.8423 30.334C26.091 30.2106 27.3185 29.9201 28.4934 29.47C29.4845 29.0846 30.3811 28.4819 31.1203 27.704C31.8493 26.92 32.3907 25.976 32.7035 24.942C33.0865 23.678 33.2683 22.362 33.2429 21.038C33.2487 20.1143 33.0897 19.1973 32.7738 18.332C32.4547 17.46 31.972 16.6603 31.3529 15.978C31.4858 15.634 31.5835 15.276 31.6421 14.91C31.7783 14.0719 31.7544 13.2148 31.5718 12.386C31.4739 11.9098 31.3412 11.4419 31.175 10.986C31.1115 10.9609 31.0437 10.9487 30.9756 10.95H30.7802C30.3697 10.954 29.9612 11.024 29.5723 11.154C29.1423 11.282 28.7201 11.442 28.3116 11.632C27.9054 11.818 27.5099 12.0277 27.1271 12.26C26.7784 12.4704 26.4362 12.6918 26.101 12.924C23.0872 12.0646 19.9011 12.0646 16.8873 12.924C16.5507 12.6939 16.2086 12.4725 15.8611 12.26C15.473 12.0251 15.0709 11.8154 14.6571 11.632C14.25 11.4371 13.8276 11.2772 13.3945 11.154C13.0115 11.0244 12.6114 10.9556 12.2081 10.95H12.0126C11.9457 10.9497 11.8793 10.9626 11.8172 10.988C11.6475 11.4438 11.5084 11.9108 11.4009 12.386C11.2313 13.2168 11.2134 14.0725 11.3481 14.91C11.4067 15.276 11.5025 15.634 11.6354 15.978C11.0168 16.6604 10.5347 17.4601 10.2164 18.332C9.90051 19.1973 9.74155 20.1143 9.74732 21.038C9.72146 22.3525 9.89689 23.663 10.2672 24.922C10.5936 25.956 11.1331 26.906 11.8524 27.704C12.5951 28.476 13.4903 29.078 14.4793 29.47C15.6481 29.93 16.8736 30.224 18.1206 30.344C17.7727 30.666 17.4951 31.064 17.3114 31.504C17.1355 31.942 17.0124 32.4 16.9518 32.868C16.2945 33.1904 15.5756 33.3598 14.8467 33.364C14.1698 33.391 13.5019 33.1978 12.9391 32.812C12.3984 32.4026 11.9403 31.8898 11.5905 31.302C11.434 31.0555 11.2595 30.8215 11.0686 30.602C10.8669 30.3718 10.6444 30.1615 10.404 29.974C10.1659 29.7922 9.90493 29.6442 9.62809 29.534C9.3564 29.4118 9.06292 29.3485 8.76614 29.348C8.69415 29.3504 8.62236 29.357 8.55114 29.368C8.45341 29.368 8.35568 29.38 8.26186 29.404C8.17795 29.4262 8.09855 29.4635 8.02732 29.514C7.99582 29.5324 7.96952 29.5588 7.95102 29.5907C7.93252 29.6226 7.92244 29.6589 7.92177 29.696C7.9296 29.7843 7.95623 29.8699 7.99978 29.9466C8.04334 30.0233 8.10277 30.0893 8.17391 30.14C8.33809 30.276 8.47686 30.38 8.58827 30.454L8.63909 30.492C8.8795 30.68 9.10818 30.884 9.32318 31.102C9.52645 31.282 9.70823 31.486 9.86264 31.708C10.0249 31.924 10.1636 32.16 10.277 32.406C10.408 32.652 10.5467 32.934 10.6914 33.254C11.0275 34.122 11.6256 34.858 12.3996 35.354C13.2108 35.8 14.1235 36.022 15.0441 35.998C15.3569 35.998 15.6696 35.978 15.9823 35.942C16.2872 35.892 16.5941 35.838 16.901 35.776V38.972C16.9061 39.1006 16.8849 39.2289 16.8385 39.3485C16.7921 39.4681 16.7216 39.5764 16.6317 39.6664C16.5417 39.7563 16.4343 39.8259 16.3164 39.8707C16.1985 39.9154 16.0727 39.9342 15.9471 39.926H15.8357C11.6581 38.5449 8.09958 35.6829 5.80101 31.8555C3.50243 28.028 2.61482 23.4866 3.29801 19.049C3.98119 14.6113 6.19028 10.5691 9.52748 7.65009C12.8647 4.73111 17.1107 3.12722 21.501 3.12722C25.8912 3.12722 30.1373 4.73111 33.4745 7.65009C36.8117 10.5691 39.0208 14.6113 39.7039 19.049C40.3871 23.4866 39.4995 28.028 37.2009 31.8555C34.9024 35.6829 31.3439 38.5449 27.1662 39.926V39.936H27.1682Z" fill="white"/>
-                    </svg>
-                    </a>
-                </div>
-
-              </div>
-
-              <div class="about__container--float--pic">
-                <canvas id="canvas" width="459" height="459"></canvas>
-              </div>
-
-            </div>
-
-            <div class="about__container--button">
-              <a class="about__container--button--anchor button">Let's talk</a>
-            </div>
-
-          </div>
-
-        </div>
+        <img class="about-me__decor about-me__decor-1" aria-hidden="true" focusable="false" src="https://i.ibb.co/McybmRb/men-stand.png">
+        <img class="about-me__decor about-me__decor-2" aria-hidden="true" focusable="false" src="https://i.ibb.co/Fwc3Mjv/paint.png" >
+        <img class="about-me__decor about-me__decor-3" aria-hidden="true" focusable="false" src="https://i.ibb.co/D4pn74G/notebook.png" >
+        <img class="about-me__decor about-me__decor-4" aria-hidden="true" focusable="false" src="https://i.ibb.co/k2ydg30/light.png">
+        <img class="about-me__decor about-me__decor-5" aria-hidden="true" focusable="false" src="https://i.ibb.co/4Kmf868/minicode.png" >
+        <img class="about-me__decor about-me__decor-6" aria-hidden="true" focusable="false" src="https://i.ibb.co/Fg7rq9C/control.png" >
+        <img class="about-me__decor about-me__decor-7" aria-hidden="true" focusable="false"  src="https://i.ibb.co/yfXvF6q/headphones.png">
 
       </div>
 
     </div>
 
-    <!-- modal de contacto-->
-    <div class="contact__modal div-main">
-
-      <h2>Contact</h2>
-
-      <form class="contact__modal--form">
-        <label for="name">Name*:</label>
-        <input class="required" type="text" value="" id="name" name="Name" >
-        <label for="email">Email*:</label>
-        <input class="required" type="email" value="" id="email" name="Email" >
-        <label for="msj">Message*:</label>
-        <textarea class="final required" type="textarea" value="" id="msj" name="Message" ></textarea>
-        <button class="contact__modal--button button" type="submit" value="send" class="send" id="send">Send</button>
-      </form>
-
-      <a class="contact__modal--button--ex" ><img src="img/ex.svg" alt="close button"></a>
+    <div class="footer">
+      <div class="wrapper">
+        <p>Made with <img src="https://i.ibb.co/tZrk2bK/heart.png" alt="heart"> by <b>Jeampaul Salazar Castillo</b>. © 2022 All rights reserved.</p>
+      </div>
 
     </div>
 
-    <script src="index.js" type="module"></script>
-
+    <script src="js/script.js"></script>
   </body>
 </html>

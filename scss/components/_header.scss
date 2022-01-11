@@ -1,0 +1,73 @@
+.header {
+  width: 87.46%;
+  margin: 0 auto;
+  max-width: 1358px;
+}
+.header__logo{
+  width: 100%;
+}
+
+.header__logo-link {
+  padding-top: 8.89%;
+  width: 25%;
+  max-width: 115px;
+}
+
+.header__button {
+  display: block;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  background-image: url("https://i.ibb.co/Cv3Ssgp/hamburger.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3px;
+}
+
+.header__button-text{
+  position:relative;
+  height: 100%;
+  animation: rotatetext 10s linear infinite;
+  margin: 0;
+}
+@keyframes rotatetext{
+  0%{
+    transform: rotate(360deg);
+  }
+}
+.header__button-text span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: absolute;
+  transform-origin: 0px 60px;
+}
+.header__menu{
+  position: fixed;
+  bottom: 1%;
+  right: 3.33%;
+  height: 120px;
+  width: 120px;
+  z-index: 10;
+}
+.header__menu-box{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: -182%;
+  right: 10%;
+  background-color: rgba(156, 192, 220, 0.58);
+  backdrop-filter: blur(23px);
+  width: 200%;
+  height: 158%;
+  border-radius: 30px 30px 0 30px;
+  a{
+    font-size: $heading-3;
+    line-height: $heading-1;
+    font-weight: bold;
+    color: $darkness-gray;
+  }
+
+}

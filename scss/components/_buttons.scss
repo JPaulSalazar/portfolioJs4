@@ -1,0 +1,13 @@
+.button{
+  background-color: $greenish-blue;
+  color: $white;
+  font-weight: bold;
+  font-size: $paragraph;
+  padding: 16px 24px;
+  border-radius: $border;
+}
+.button--gradient{
+  background: $cta-gradient;
+  text-transform:uppercase;
+}
+

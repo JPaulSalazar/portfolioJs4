@@ -1,0 +1,27 @@
+//settings
+//variables
+@import 'settings/varibles';
+
+//tools
+//mixins
+@import'tools/mixins';
+
+//generics
+//normalize
+@import 'generics/normalize';
+//global
+@import 'generics/global';
+
+//components
+//header
+@import 'components/header';
+//buttons
+@import 'components/buttons';
+//slider
+@import 'components/slider';
+//footer
+@import 'components/footer';
+
+//partials
+//home
+@import 'partials/home';

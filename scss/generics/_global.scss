@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+body, html{
+  width: 100%;
+}
+
+body {
+  font-size: $mobile-font-size;
+  font-family:$general-font-style;
+  margin: 0;
+  position: relative;
+}
+
+h1{
+  font-size: $heading-1;
+  line-height: 3.3rem;
+  color: $greenish-blue;
+}
+
+h2{
+  font-size: $heading-2;
+}
+
+img{
+  display: inline-block;
+}
+
+p{
+  font-size: $paragraph;
+  line-height: 1.563rem;
+
+}
+li{
+  list-style: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix{
+  content: "";
+  clear: both;
+  display: table;
+}
+.wrapper{
+  margin: 0 auto;
+  width: 70.4%;
+  max-width: 1032px;
+}
+
+

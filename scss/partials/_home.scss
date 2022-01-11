@@ -1,0 +1,112 @@
+.main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 48px;
+}
+.main__images{
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+}
+
+.main__img--back{
+  width: 80%;
+  position: absolute;
+  z-index: -3;
+  right: 0px;
+}
+.main__img--center{
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  left: 0px;
+}
+.main__img--front-1{
+  padding-bottom: 58%;
+  width: 18.93%;
+  padding-top: 6%;
+}
+
+.main__img--front-2{
+  padding-bottom: 18%;
+  padding-left: 35%;
+}
+.main__p{
+  color: $darkness-gray;
+}
+.main__text{
+  width: 100%;
+}
+.main__scroll-button{
+  display: none;
+  border: none;
+  background-color: transparent;
+  margin: 0 auto;
+  text-align: center;
+  svg{
+    display: block;
+    margin: 0 auto;
+  }
+  span{
+    font-size: $caption;
+  }
+}
+.background-shape{
+  position: absolute;
+  z-index: -5;
+  filter: blur(25px);
+}
+.background-shape-2{
+  right: 0;
+  bottom: 44%;
+}
+.background-shape-3{
+  bottom: 17%;
+}
+.about-me{
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-me__decor{
+  display: none;
+}
+.about-me__text{
+  color: $darkness-gray;
+  padding-bottom: 40px;
+}
+.about-me__button-1{
+  margin-bottom: 24px;
+}
+
+@media (min-width: 535px){
+  .about-me__button-1{
+    margin-right: 40px;
+  }
+}
+@media (min-width: 591px){
+  .about-me__button-1{
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 969px){
+  .main{
+    justify-content: space-between;
+  }
+  .main__images{
+    width: 50%;
+    align-self: flex-end;
+  }
+  .main__text{
+    width: 50%;
+  }
+  .main__scroll-button{
+    display: block;
+    flex: none;
+  }
+  .main__button{
+    align-self:flex-start;
+  }
+}
